@@ -10,25 +10,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return {
-    addNewExercise: (name, sets, reps, weight) => {
-      const exercise = {
-        name,
-        sets,
-        reps,
-        weight,
-      };
-      dispatch({
-        type: 'ADD_NEW_EXERCISE',
-        exercise,
-      });
-    },
-    isFontLoaded: () => {
-      dispatch({
-        type: 'FONT_LOADED',
-      });
-    },
-  };
+  return {};
 }
 
 export default connect(mapStateToProps)(WorkoutApp);
