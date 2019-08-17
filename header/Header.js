@@ -8,6 +8,7 @@ const Header = ({ weekDay }) => (
     style={styles.header_container}
     style={{ paddingTop: Platform.OS === 'ios' ? 0 : StatusBar.currentHeight }}
   >
+    {console.log(weekDay)}
     <Text style={styles.header_weekday}>{weekDay}</Text>
   </View>
 );
